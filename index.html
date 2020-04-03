@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="changecolor.css">
+    <title>Change bakground color</title>
+</head>
+<body>
+    <h1>Set background color of your choice</h1>
+    <div class="color">
+        <a  onclick="changecolor('red')" id="red">#EA2027</a>
+        <a  onclick="changecolor('Blue')"  id="Blue" > #0652DD</a>
+        <a  onclick="changecolor('Green')" id="Green">#009432</a>
+        <a  onclick="changecolor('Yellow')" id="Yellow">#FFC312</a>
+        <a  onclick="changecolor('Orange')" id="Orange">#EE5A24</a>
+        <a  onclick="changecolor('violet')" id="violet">#6F1E51</a>
+
+  </div>
+  <script> 
+  function changecolor(id){
+      document.body.style.backgroundColor=document.getElementById(id).innerHTML;
+  }
+  </script>
+</body>
+</html>
+
